@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+
+  <!-- Header Start -->
+  <header class="flex justify-center p-4">
+    <nav class="flex items-center w-full max-w-6xl bg-gradient-to-r from-[#1c1c1c] to-[#2c2c2c] px-6 py-3 rounded-full shadow-lg">
+      
+      <!-- Logo (aligned left) -->
+      <div class="flex items-center">
+        <img src="logo1.png" alt="Logo" class="h-8 w-auto" />
+      </div>
+
+      <!-- Spacer -->
+      <div class="ml-auto flex items-center space-x-6">
+        <!-- Navigation Links -->
+        <ul class="flex gap-6 text-white font-semibold text-sm items-center">
+          <li class="text-green-400"><a href="#">Home</a></li>
+          <a href="studio.html">Studio</a>
+          <a href="about.html">About Me</a>
+          <a href="contact.html">Contact</a>
+        </ul>
+
+        <!-- Dashboard Button -->
+        <a href="#" class="px-5 py-2 text-sm font-bold text-gray-800 bg-gradient-to-r from-sky-200 via-teal-300 to-cyan-500 rounded-full shadow hover:opacity-90 transition">
+          Dashboard
+        </a>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+</body>
+</html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M2 Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 40px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    .services, .portfolio, .about, .contact {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .services h2, .portfolio h2, .about h2, .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service {
+      border: 1px solid #333;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: #111;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      color: #ccc;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .portfolio-item {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.03);
+    }
+
+    .portfolio-item video, .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-content, .contact-form {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+
+    .about-content p, .contact-form p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #333;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .contact-form button {
+      padding: 1rem 2rem;
+      background-color: #f8c04d;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #f7b74a;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="logo">M2 Studio</div>
+    <div class="tagline">Edit Bold. Create Loud.</div>
+    <div class="scroll-indicator">▼ Scroll Down</div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Reels Editing</h3>
+        <p>Fast, punchy edits that capture attention and boost engagement on social media.</p>
+      </div>
+      <div class="service">
+        <h3>Full Video Editing</h3>
+        <p>From raw footage to polished content. Perfect for YouTube, vlogs, and podcasts.</p>
+      </div>
+      <div class="service">
+        <h3>Thumbnails & Visuals</h3>
+        <p>Eye-catching thumbnails and visuals that get clicks and views, designed to stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <video src="sample1.mp4" controls></video>
+      </div>
+      <div class="portfolio-item">
+        <video src="sample2.mp4" controls></video>
+      </div>
+      <div class="portfolio-item">
+        <img src="thumbnail1.jpg" alt="Thumbnail Design" />
+      </div>
+      <div class="portfolio-item">
+        <img src="thumbnail2.jpg" alt="Thumbnail Design" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About M2 Studio</h2>
+    <div class="about-content">
+      <p>Welcome to M2 Studio — your creative hub for video editing, reels, thumbnails, and all things visual. We bring your ideas to life with clean, polished edits that capture attention and tell your story. Our goal is simple: to make your content unforgettable.</p>
+      <p>Whether you're a brand, influencer, or creator, we're here to elevate your online presence. Let’s create something amazing together.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form action="" method="POST">
+        <p>Your Name:</p>
+        <input type="text" name="name" required placeholder="Enter your name" />
+        <p>Your Email:</p>
+        <input type="email" name="email" required placeholder="Enter your email" />
+        <p>Message:</p>
+        <textarea name="message" required placeholder="Write your message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

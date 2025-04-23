@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - M2 Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #0f1c1f;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    h1 span {
+      color: #00ffae;
+    }
+    p.subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    .form-container {
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ccc;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #333;
+      color: white;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(to right, #8de8e0, #00c6b8);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .info-box {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    .info-box h3 {
+      margin-bottom: 5px;
+      color: #00ffae;
+    }
+    .footer {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ccc;
+    }
+    .socials {
+      margin-top: 10px;
+    }
+    .socials a {
+      color: #ccc;
+      margin: 0 8px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body><!-- Header -->
+    <div class="custom-header">
+      <div class="header-content">
+        <img src="your-logo.png" alt="M2 Studio Logo" class="logo">
+        
+        <div class="right-side">
+          <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="studio.html">Studio</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <a href="dashboard.html" class="dashboard-btn">Dashboard</a>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      .custom-header {
+        background: linear-gradient(to right, #111 0%, #222 100%);
+        padding: 12px 20px;
+        border-radius: 40px;
+        margin: 20px auto;
+        max-width: 95%;
+      }
+    
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      .logo {
+        height: 40px;
+      }
+    
+      .right-side {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+    
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: 0.3s ease;
+      }
+    
+      .nav-links a.active {
+        color: #00ff88;
+      }
+    
+      .nav-links a:hover {
+        color: #00ffd5;
+      }
+    
+      .dashboard-btn {
+        background: linear-gradient(to right, #a8f5ff, #00c6b8);
+        color: black;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+    
+      .dashboard-btn:hover {
+        background: linear-gradient(to right, #7df0ff, #00b3a3);
+      }
+    
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+    
+        .right-side {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+    
+        .nav-links {
+          flex-direction: column;
+        }
+      }
+    </style>
+<div>    
+  <h1><span>Feedback</span></h1>
+  <p class="subtitle">We’re conveniently located in Chennai near Porur, making it easy for everyone to drop by and explore our offerings in person.</p>
+
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="contact-info">
+    <div class="info-box">
+      <h3>Timing</h3>
+      <p>Mon-Fri: 10AM - 6PM</p>
+    </div>
+    <div class="info-box">
+      <h3>Email</h3>
+      <p>m2editingstudio@gmail.com</p>
+    </div>
+    <div class="info-box">
+      <h3>Instagram</h3>
+      <p>@m2editingstudio</p>
+    </div>
+    <div class="info-box">
+      <h3>WhatsApp</h3>
+      <p>+91 9876543210</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 M2 Studio, All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Refund Policy</a>
+    </div>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</body>
+</html>

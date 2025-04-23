@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - M2 Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #0f1c1f;
+      color: white;
+      padding: 20px;
+    }
+    .navbar {
+      background: #1a1a1a;
+      border-radius: 40px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .navbar-left img {
+      width: 40px;
+    }
+    .navbar-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .navbar-right a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .navbar-right a.active {
+      color: #00ffae;
+    }
+
+    .about-section {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .about-section img {
+      max-width: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .about-section h1 {
+      font-size: 32px;
+      color: #00ffae;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .team-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .team-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00ffae;
+    }
+    .team-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .team-card {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 15px;
+      width: 220px;
+      transition: transform 0.3s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .team-card h3 {
+      margin-bottom: 5px;
+      color: #00ffae;
+    }
+    .team-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .cta-button {
+      margin-top: 40px;
+    }
+    .cta-button a {
+      background: linear-gradient(to right, #8de8e0, #00c6b8);
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cta-button a:hover {
+      background: linear-gradient(to right, #00c6b8, #8de8e0);
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<div class="custom-header">
+    <div class="header-content">
+      <img src="your-logo.png" alt="M2 Studio Logo" class="logo">
+      
+      <div class="right-side">
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="studio.html">Studio</a>
+          <a href="about.html">About Me</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a href="dashboard.html" class="dashboard-btn">Dashboard</a>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .custom-header {
+      background: linear-gradient(to right, #111 0%, #222 100%);
+      padding: 12px 20px;
+      border-radius: 40px;
+      margin: 20px auto;
+      max-width: 95%;
+    }
+  
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      height: 40px;
+    }
+  
+    .right-side {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+  
+    .nav-links a.active {
+      color: #00ff88;
+    }
+  
+    .nav-links a:hover {
+      color: #00ffd5;
+    }
+  
+    .dashboard-btn {
+      background: linear-gradient(to right, #a8f5ff, #00c6b8);
+      color: black;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+  
+    .dashboard-btn:hover {
+      background: linear-gradient(to right, #7df0ff, #00b3a3);
+    }
+  
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+  
+      .right-side {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+  
+      .nav-links {
+        flex-direction: column;
+      }
+    }
+  </style>  
+  </div>
+
+  <div class="about-section">
+    <img src="your-team-photo.jpg" alt="Team Photo" />
+    <h1>About Us</h1>
+    <p>We’re <strong>Madhan & Mama</strong>, the creative duo behind M2 Studio. With a shared passion for video editing, sound design, and storytelling, we’ve built a studio that helps creators and businesses bring their visions to life.</p>
+    <p>With a combined 8+ years of experience in content creation and post-production, we specialize in high-impact visuals and cinematic edits that resonate. Whether it's YouTube videos, short films, or brand projects — we're here to make it stand out.</p>
+    <p>We also work with a talented team that helps us deliver high-quality results with <strong>speed and precision</strong>. You bring the vision — we deliver it fast.</p>
+  </div>
+
+  <div class="team-section">
+    <h2>Meet the Founders</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="madhan.jpg" alt="Madhan">
+        <h3>Madhan</h3>
+        <p>Co-Founder / Lead Editor</p>
+      </div>
+      <div class="team-card">
+        <img src="mama.jpg" alt="Mama">
+        <h3>Mama</h3>
+        <p>Co-Founder / Creative Director</p>
+      </div>
+    </div>
+    <div class="cta-button">
+      <a href="#">Work With Us</a>
+    </div>
+  </div>
+
+</body>
+</html>
